@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Author: Mitwa Patel, 000905034 -->
+    <title>Sandy and Leslie's Apartment</title>
+    <link href="apartment_layout.css" rel="stylesheet" type="text/css">
+	<link href="mobile.css" rel="stylesheet" type="text/css"> 
+	<link href="print.css" rel="stylesheet" type="text/css">
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+    
+        header p{
+            text-align: center;
+        }
+
+        #click p{
+            text-align: center;
+        }
+
+        #aptImg{
+            text-align: center;
+        }
+
+        #li1, #li2, #li3, #li4, #li5{
+            border-right: 1px solid black;
+            padding-right: 7px;
+        }
+
+        .grid{
+            display: grid;
+		    grid-template-columns: 2fr 1.5fr 1fr;
+			grid-gap: 20px;
+			margin: 10px;
+        }
+
+        h3{
+            background-color: rgba(251, 208, 50, 0.85);
+            padding: 5px;
+        }
+
+        #message{
+            grid-column: 1;
+			grid-row: 1;
+        }
+
+        #survey{
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #aptServices{
+            grid-column: 2;
+            grid-row: 1/ span 2;
+        }
+
+        #location{
+            grid-column: 3;
+			grid-row: 1/ span 2;
+        }
+
+        #location img{
+            width: 262px;
+            height: 300px;
+        }
+
+        table{
+			border: 1px solid black;
+			border-collapse:collapse;
+            text-align: left;		
+		}
+
+		table th{
+            border: 1px solid black;
+            background-color: rgb(175,172,172);
+			padding: 10px;		
+		}
+
+		table td{
+			border: 1px solid black;
+			padding: 7px;
+		}
+
+        #bgGreen{
+            background-color: rgb(191, 247, 228);
+            padding: 3px;
+        }
+
+        #picGallery{
+            margin: 10px;
+        }
+
+        #flexGallary{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px;
+        }
+
+        #heading{
+			background-color: rgb(224, 103, 54);
+			text-align: left;
+			color: white;
+			margin-right: 0px;
+			margin-bottom: 14px;	
+		}
+
+        #album{
+            margin-top: 40px;
+            margin-bottom: 40px
+        }
+
+		#balcony{
+			width: auto;
+			flex-wrap: wrap;
+			margin: 32px;
+		}
+
+		#bathroom{
+			width: auto;
+			flex-wrap: wrap;
+			margin: 32px;
+		}
+
+		#bedroom{
+			width: auto;
+			flex-wrap: wrap;
+			margin: 32px;
+		}
+
+		#diningRoom{
+			width: auto;
+			flex-wrap: wrap;
+			margin: 32px;
+		}
+
+		#kitchen{
+			width: auto;
+			flex-wrap: wrap;
+			margin: 32px;
+		}
+
+		#livingRoom{
+			width: auto;
+			flex-wrap: wrap;	
+			margin: 32px;
+		}
+
+		Footer{
+			text-align: center;
+			margin-top: 35px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Sandy and Leslie's Apartment</h2>
+    </header> <br>
+
+        <div id="click">
+            <p>Click a room for a detailed view.</p>
+            <a href="apartment.html">
+				<div id="aptImg"><img src="images/thumbnails/apartmentfloorplan_border.png" alt="ApartmentPlan" usemap="#mapping"> </div>
+			</a>
+			
+			<map name="mapping">
+				<area shape="rect" coords="42,102,185,265" href="bedroom.html" alt="Bedroom1">
+				<area shape="poly" coords="391,108,555,107,578,310,501,311,494,238,392,234" href="bedroom.html" alt="Bedroom2">
+			    <area shape="rect" coords="197,102,341,278" href="livingroom.html" alt="LivingRoom">
+				<area shape="circle" coords="327,296,362,386" href="dining.html" alt="DiningRoom">
+				<area shape="rect" coords="194,290,290,390" href="kitchen.html" alt="Kitchen">
+			</map>
+    
+    </div>
+
+    <nav>
+        <ul>
+            <li id="li1"><a href="apartment.html">Apartment</a></li>
+            <li id="li2"><a href="bedroom.html">Bedroom 1</a></li>
+            <li id="li3"><a href="bedroom.html">Bedroom 2</a></li>
+            <li id="li4"><a href="dining.html">Dining Room</a></li>
+            <li id="li5"><a href="Kitchen.html">Kitchen</a></li>
+            <li id="li6"><a href="livingroom.html">Living Room</a></li>
+        </ul>
+    </nav> <br>
+
+    <main>
+        <div class="grid">
+            <div id="message">
+
+                <h3>Welcome Message</h3> <br>
+                <audio controls id= "audible">
+                    <source src="images/apartment.mp3" type="audio/mp3">
+                </audio> <br><br>
+            
+                <p>
+                    Transcript: Hello. Welcome to our apartment. You’ll really enjoy living here. The rooms are spacious and the apartment building amenities are fantastic. We look forward to hearing from you!
+                </p>
+            </div>
+
+    <div id="survey">
+        <h3>Survey</h3> <br>
+        
+        <form action="https://csunix.mohawkcollege.ca/tooltime/showit.pl" method="post">
+        
+            <legend>
+                How did you find out about this apartment? Check any that apply: 
+            </legend> <br>
+            
+            <input type="checkbox" value="Web search" name="web" id="webs">
+            <label>Web search</label>
+            
+            <input type="checkbox" value="Friend" name="friend" id="frnd">
+            <label>Friend</label>
+            
+            <input type="checkbox" value="Newspaper" name="newspaper" id="news">
+            <label>Newspaper</label> <br> <br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset Form">
+        </form>
+    </div>
+
+        <div id="aptServices">
+            <h3>Apartment Services:</h3> <br>
+    
+            <table>
+
+                <tr>
+                    <th>Service</th>
+                    <th>Day/Hours</th>
+                </tr>
+
+                <tr>
+                    <td>Gym</td>
+                    <td rowspan="2">Monday-Friday 6am - 10pm <br> Saturday 8am - 8pm <br> 8am - 5pm</td>
+                </tr>
+
+                <tr>
+                    <td>Pool</td>
+                </tr>
+
+                <tr>
+                    <td>Laundry</td>
+                    <td>24/7</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" id="bgGreen">Please do not allow people you do not know to use these facilities.</td>
+                </tr>
+    
+            </table>
+        </div>
+
+        <div id="location">
+            <h3>Location</h3> <br>
+            <img src="images/location.png" alt="location">
+        </div>
+    </div>
+
+        <div id="picGallery">
+            <h3 id="album">Gallary</h3>
+
+            <div id="flexGallary">
+                <div id="balcony">
+                    <h3 id="heading">Balcony</h3>
+                    <img src="images/thumbnails/balcony_sm.jpg" alt="balconyImg">
+                </div>
+
+                <div id="bathroom">
+                    <h3 id="heading">Bathroom</h3>
+                    <img src="images/thumbnails/bathroom_sm.jpg" alt="bathroomImg">
+                </div>
+
+                <div id="bedroom">
+                    <h3 id="heading">Bedroom</h3>
+                    <img src="images/thumbnails/bedroom_sm.jpg" alt="bedroomImg">
+                </div>
+
+                <div id="diningRoom">
+                    <h3 id="heading">Dining Room</h3>
+                    <img src="images/thumbnails/diningroom_sm.jpg" alt="diningRoom">
+                </div>
+
+                <div id="kitchen">
+                    <h3 id="heading">Kitchen</h3>
+                    <img src="images/thumbnails/kitchen_sm.jpg" alt="kitchen">
+                </div>
+
+                <div id="livingRoom">
+                    <h3 id="heading">Living Room</h3>
+                    <img src="images/thumbnails/livingroom_sm.jpg" alt="livingRoom">
+                </div>
+            </div>
+        </div>
+</main>
+
+<footer>
+    <div>
+        <p>
+            For more information contact: 
+            <a href="mailto:SandyAndLeslie@exammple.com">SandyAndLeslie@example.com</a>
+            or <a href="tel:905-555-1233">(905) 555-1234</a>
+        </p> <br>
+        <p> &copy; Sandy and Leslie 2022 </p>
+    </div>
+</footer>
+
+</body>
+</html>

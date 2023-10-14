@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Author: Mitwa Patel, 000905034 -->
+    <title>Living Room</title>
+    <link href="apartment_layout.css" rel="stylesheet" type="text/css">
+	<link href="mobile.css" rel="stylesheet" type="text/css"> 
+	<link href="print.css" rel="stylesheet" type="text/css">
+    <style>
+        *{
+	        padding: 1px;
+	        margin: 1px;
+        }
+    
+        header p{
+            text-align: center;
+        }
+
+        .aptImg{
+            text-align: center;
+        }
+
+        #li1, #li2, #li3, #li4, #li5{
+            border-right: 1px solid black;
+            padding-right: 7px;
+        }
+
+        h3{
+            background-color: rgba(251, 208, 50, 0.85);
+            padding: 5px;
+        }
+
+        table{
+			border: 1px solid black;
+			border-collapse:collapse;
+			padding: 5px;
+		}
+
+		table th{
+			border: 1px solid black;
+			padding: 5px;
+			background-color: rgb(175,172,172);	
+		}
+
+		table td{
+			border: 1px solid black;
+			padding: 10px;
+		}
+
+        #green{
+            background-color: rgb(195,245,228);
+            padding: 3px;
+        }
+
+        #main{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Sandy and Leslie's apartment</h2>
+        
+        <div class="aptImg"><img src="images/thumbnails/apartmentfloorplan.jpg" alt="floorplan"></div>
+    </header>
+
+    <nav>
+        <ul>
+            <li id="li1"><a href="apartment.html">Apartment</a></li>
+            <li id="li2"><a href="bedroom.html">Bedroom 1</a></li>
+            <li id="li3"><a href="bedroom.html">Bedroom 2</a></li>
+            <li id="li4"><a href="dining.html">Dining Room</a></li>
+            <li id="li5"><a href="Kitchen.html">Kitchen</a></li>
+            <li id="li6"><a href="livingroom.html">Living Room</a></li>
+        </ul>
+    </nav> <br>
+
+    <main>
+        <div id="main">
+            <h3>Living Room Detail</h3> <br>
+           
+            <img id="img" src="images/livingroom_lg.jpg" alt="kitchenImg">
+        </div> <br>
+        
+        
+        <div id="aptServices">
+            <h3>Apartment Services:</h3> <br>
+    
+            <table>
+
+                <tr>
+                    <th>Service</th>
+                    <th>Day/Hours</th>
+                </tr>
+
+                <tr>
+                    <td>Gym</td>
+                    <td rowspan="2">Monday-Friday 6am - 10pm <br> Saturday 8am - 8pm <br> 8am - 5pm</td>
+                </tr>
+
+                <tr>
+                    <td>Pool</td>
+                </tr>
+
+                <tr>
+                    <td>Laundry</td>
+                    <td>24/7</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" id="green">Please do not allow people you do not know to use these facilities.</td>
+                </tr>
+    
+            </table>
+        </div> <br> 
+</main>
+
+<footer>
+    <div>
+        <p>
+            For more information contact: 
+            <a href="mailto:SandyAndLeslie@exammple.com">SandyAndLeslie@example.com</a>
+            or <a href="tel:905-555-1233">(905) 555-1234</a>
+        </p> <br>
+        <p> &copy; Sandy and Leslie 2022 </p>
+    </div>
+</footer>
+
+
+</body>
+</html>

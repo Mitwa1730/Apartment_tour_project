@@ -1,0 +1,28 @@
+/* Author: Mitwa Patel, 000905034  */
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+@media print{
+    #click{
+        display: none;
+    }
+
+	#message audio{
+		display: none;
+	}
+
+	.grid{
+		display: block;
+	}
+
+    ul{
+		text-align: center;
+	}
+
+    #li1, #li2, #li3, #li4, #li5{
+        border-right: 0px;
+    }
+}

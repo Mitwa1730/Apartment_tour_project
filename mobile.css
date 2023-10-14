@@ -1,0 +1,34 @@
+/* Author: Mitwa Patel, 000905034 */
+*{
+	padding: 0px;
+	margin: 0px;
+    /* margin: auto; */
+    
+}
+
+@media only screen and (max-width: 600px ){
+    
+    #click{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+
+    #li1, #li2, #li3, #li4, #li5{
+        border: none;
+        border-right: 0px;
+    }
+
+    .grid{
+        display: block;
+        width: 100%;   
+        margin: auto; 
+    }
+
+    #survey, #aptServices, #location{
+       margin-top: 20px;
+       grid-column: auto;
+    }
+}
